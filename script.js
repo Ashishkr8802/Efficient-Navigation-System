@@ -21,7 +21,7 @@ $(document).ready(function() {
         if (startLocation.trim().toLowerCase() !== 'pari chowk' || destination.trim().toLowerCase() !== 'galgotias university') {
             // Display alert if input values are not valid
             $('#result').html(`<div class="alert alert-danger" role="alert">
-                Entered Data is not feeded.
+                Entered Data is not valid.
             </div>`);
             // Clear existing graph
             clearGraph();
@@ -55,6 +55,12 @@ $(document).ready(function() {
             // Check if the vehicle can pass through this path
             let canPassPath = true;
             let totalWidth = 0;
+            let totalHeight = 0;
+
+            // Calculate total width and height of the path
+            path.forEach(segment => {
+                totalWidth += segment.width;
+                totalHeight += segment.height;
             });
 
             // Compare total path dimensions with vehicle dimensions
