@@ -1,0 +1,25 @@
+/* General Styles */
+body {
+    background-color: rgba(248, 249, 250, 0.8); /* Background color with opacity */
+    font-family: Arial, sans-serif;
+    background-image: url('hero.jpg'); /* Background image */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 2200px;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Form container background color with opacity */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.boton{
+    margin-left: 260px;
+}
